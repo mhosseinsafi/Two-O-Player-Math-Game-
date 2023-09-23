@@ -24,7 +24,6 @@ class Game
   private
 
   def display_scores
-    # scores = @score.get_scores
     puts "Scores: #{@players[0].lives} - #{@players[1].lives}"
   end
 
@@ -36,7 +35,6 @@ class Game
 
     if math_question.check_answer(player_answer)
       puts "Nice ;-)."
-      # @score.update_score(@current_player, 1)
     else
       puts "I dont Think so !."
       @current_player.lose_life

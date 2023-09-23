@@ -4,7 +4,7 @@ class Score
   end
 
   def update_score(player, points)
-    @scores[player] += points
+    @scores[player.name.downcase.to_sym] = points
   end
 
   def get_scores
